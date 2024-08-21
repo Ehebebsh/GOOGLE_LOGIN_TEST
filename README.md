@@ -6,21 +6,25 @@
 
 ### 1.1 패키지 설치
 <details>
-<summary>ShowcaseView 패키지 설치 및 설정</summary>
+<summary> 패키지 설치 및 설정</summary>
 <div markdown="1">
 
-구글 로그인 기능 외에도, 앱 소개를 위한 **ShowcaseView** 패키지를 사용하여 하이라이트 온보딩 화면을 구현했습니다. 이 패키지는 사용자가 앱의 주요 기능을 쉽게 이해할 수 있도록 도와줍니다.
+구글 로그인 기능을 구현하기 위해서 아래 3개의 패키지를 설치해 주어야 한다.
 
-- **패키지 링크**: [showcaseview](https://pub.dev/packages/showcaseview)
+- [google_sighn_in](https://pub.dev/packages/google_sign_in)
+- [firebase_auth](https://pub.dev/packages/firebase_auth)
+- [firebase_core](https://pub.dev/packages/firebase_core)
 
 ```yaml
 dependencies:
-  showcaseview: ^1.1.0
+  google_sign_in: ^6.2.1
+  firebase_auth: ^4.15.3
+  firebase_core: ^2.24.2
 ```
 </div>
 </details>
 
-### 1.2 코딩하기
+### 1.2 Firebase 설정하기
 <details>
 <summary>구현 예시 코드</summary>
 <div markdown="1">
