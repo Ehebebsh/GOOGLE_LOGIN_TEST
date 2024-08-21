@@ -76,5 +76,6 @@ https://velog.io/@gwi060722/Google-login-%EC%97%B0%EB%8F%99%EB%B0%A9%EB%B2%95
 아래는 앱의 실행 화면을 보여주는 GIF입니다. 사용자가 구글 로그인을 통해 어떻게 앱에 접근하는지 확인할 수 있습니다.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ea325e9f-5f4d-4b35-af5f-229f65832e53" alt="App Demo" width="300">
+  <img src="https://github.com/user-attachments/assets/aa50269a-8e39-4af4-a252-2acb580ad816" alt="App Demo" width="300">
 </p>
+
