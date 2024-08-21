@@ -26,25 +26,17 @@ dependencies:
 
 ### 1.2 Firebase 설정하기
 <details>
-<summary>구현 예시 코드</summary>
+<summary>설정 방법 블로그</summary>
 <div markdown="1">
-아래는 ShowcaseView를 사용하여 특정 UI 요소를 강조하는 방법의 예제 코드입니다. 이 코드는 로그아웃 버튼을 사용자가 쉽게 인식할 수 있도록 강조합니다.
+https://velog.io/@gwi060722/Google-login-%EC%97%B0%EB%8F%99%EB%B0%A9%EB%B2%95
+</div>
+</details>
 
-dart
-코드 복사
-```dart
-Showcase(
-  key: logout,
-  description: 'ex) 로그아웃 하려면 눌러주세요',
-  overlayOpacity: 0.5,
-  targetShapeBorder: const CircleBorder(),
-  targetPadding: const EdgeInsets.all(8),
-  child: const Icon(
-    Icons.exit_to_app,
-    color: Colors.white,
-  ),
-),
-```
+### 1.3 코딩하기 
+<details>
+<summary>설정 방법 블로그</summary>
+<div markdown="1">
+https://velog.io/@gwi060722/Google-login-%EC%97%B0%EB%8F%99%EB%B0%A9%EB%B2%95
 </div>
 </details>
 
