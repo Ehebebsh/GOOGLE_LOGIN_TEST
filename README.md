@@ -34,9 +34,41 @@ https://velog.io/@gwi060722/Google-login-%EC%97%B0%EB%8F%99%EB%B0%A9%EB%B2%95
 
 ### 1.3 코딩하기 
 <details>
-<summary>설정 방법 블로그</summary>
+<summary>코드 보기</summary>
 <div markdown="1">
-https://velog.io/@gwi060722/Google-login-%EC%97%B0%EB%8F%99%EB%B0%A9%EB%B2%95
+  
+```dart
+  Future<User?> _handleSignIn() async {
+    try {
+      final GoogleSignInAccount? googleSignInAccount = await _googleSignIn.signIn();
+      final GoogleSignInAuthentication googleSignInAuthentication =
+      await googleSignInAccount!.authentication;
+
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleSignInAuthentication.accessToken,
+        idToken: googleSignInAuthentication.idToken,
+      );
+
+      final UserCredential authResult = await _auth.signInWithCredential(credential);
+      final User? user = authResult.user;
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => LoginSuccess()),
+      );
+
+      return user;
+    } catch (error) {
+      print("Error during Google sign in: $error");
+      return null;
+    }
+  }
+
+  Future<void> _handleSignOut() async {
+    await _auth.signOut();
+    await _googleSignIn.signOut();
+    print("User signed out");
+  }
+  ```
 </div>
 </details>
 
